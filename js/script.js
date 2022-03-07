@@ -8,10 +8,42 @@ rappresentano i membro del team.
 stampiamo dinamicamente una card per ogni membro del team. 
 */
 
+
+let teamContainer = document.querySelector('.team-container');
+let cardImage = document.querySelector('.card-image');
+let cardTextH3 = document.querySelector('.card-text h3');
+let cardTextP = document.querySelector('.card-text p');
+
 const objArr = [
     {
         name: '',
         role: '',
         photo: '',
-    }
+    },
+    {
+        name: '',
+        role: '',
+        photo: '',
+    },
+    {
+        name: '',
+        role: '',
+        photo: '',
+    },
+    {
+        name: '',
+        role: '',
+        photo: '',
+    },
+    {
+        name: '',
+        role: '',
+        photo: '',
+    },
+    {
+        name: '',
+        role: '',
+        photo: '',
+    },
+    
 ]
