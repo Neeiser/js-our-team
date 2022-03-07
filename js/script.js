@@ -78,3 +78,63 @@ for (let i = 0; i < objArr.length; i++) {
     </p>
     `
 }
+
+/*
+------------------------------------
+BONUS
+------------------------------------
+*/
+
+let userInputName = document.getElementById('name');
+let userInputRole = document.getElementById('role');
+let userInputimage = document.getElementById('image');
+let addMemberButton = document.getElementById('addMemberButton');
+
+let newMember = {};
+
+addMemberButton.addEventListener("click", function(){
+
+/* Per Aggiungere i valori dopo il click alla pagina */
+    Object.assign(newMember, {name: userInputName.value});
+    Object.assign(newMember, {role: userInputRole.value});
+
+
+    
+    console.log(newMember);
+
+    
+
+    let teamCard = document.createElement('div');
+    teamCard.classList.add('team-card');
+    teamContainer.append(teamCard);
+
+    /* ----------------------------------- */
+
+    let cardImage = document.createElement('div');
+    cardImage.classList.add('card-image');
+    teamCard.append(cardImage);
+
+    cardImage.innerHTML = 
+    `
+    <img src= https://picsum.photos/400/429?random=6>
+    `
+    
+    /* ----------------------------------- */
+     
+    let cardText = document.createElement('div');
+    cardText.classList.add('card-text');
+    teamCard.append(cardText);
+    
+    cardText.innerHTML = 
+    `
+    <h3>
+    ${newMember.name}
+    </h3>
+    <p>
+    ${newMember.role}
+    </p>
+    `
+
+    userInputName.value= ''; /* Per resettare i campi dopo aver inviato i dati */
+    userInputRole.value= ''; /* Per resettare i campi dopo aver inviato i dati */
+});
