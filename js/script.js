@@ -50,23 +50,31 @@ for (let i = 0; i < objArr.length; i++) {
    let teamCard = document.createElement('div');
    teamCard.classList.add('team-card');
    teamContainer.append(teamCard);
-
-   let cardText = document.createElement('div');
-   cardText.classList.add('card-text');
-   teamCard.append(cardText);
-   cardText.innerHTML = 
-   `
-   <h3>
-   ${objArr[i].name}
-   </h3>
-   <p>
-   ${objArr[i].role}
-   </p>
-   `
-
-
-   let cardImage = document.createElement('div');
-   cardImage.classList.add('')
-
    
+   /* ----------------------------------- */
+   
+    let cardImage = document.createElement('div');
+    cardImage.classList.add('card-image');
+    teamCard.append(cardImage);
+
+    cardImage.innerHTML = 
+    `
+    <img src= ${objArr[i].photo}>
+    `
+     
+    /* ----------------------------------- */
+
+    let cardText = document.createElement('div');
+    cardText.classList.add('card-text');
+    teamCard.append(cardText);
+    
+    cardText.innerHTML = 
+    `
+    <h3>
+    ${objArr[i].name}
+    </h3>
+    <p>
+    ${objArr[i].role}
+    </p>
+    `
 }
