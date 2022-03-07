@@ -9,10 +9,10 @@ stampiamo dinamicamente una card per ogni membro del team.
 */
 
 
-let teamContainer = document.querySelector('.team-container');
-let cardImage = document.querySelector('.card-image');
-let cardTextH3 = document.querySelector('.card-text h3');
-let cardTextP = document.querySelector('.card-text p');
+const teamContainer = document.querySelector('.team-container');
+const cardImage = document.querySelector('.card-image');
+const cardTextH3 = document.querySelector('.card-text h3');
+const cardTextP = document.querySelector('.card-text p');
 
 const objArr = [
     {
