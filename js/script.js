@@ -10,40 +10,42 @@ stampiamo dinamicamente una card per ogni membro del team.
 
 
 const teamContainer = document.querySelector('.team-container');
-const cardImage = document.querySelector('.card-image');
-const cardTextH3 = document.querySelector('.card-text h3');
-const cardTextP = document.querySelector('.card-text p');
 
 const objArr = [
     {
-        name: '',
-        role: '',
-        photo: '',
+        name: 'Wayne Barnett',
+        role: 'Founder & CEO',
+        photo: 'https://picsum.photos/400/429?random=1',
     },
     {
-        name: '',
-        role: '',
-        photo: '',
+        name: 'Angela Caroll',
+        role: 'Chief Editor',
+        photo: 'https://picsum.photos/400/429?random=2',
     },
     {
-        name: '',
-        role: '',
-        photo: '',
+        name: 'Walter Gordon',
+        role: 'Office Manager',
+        photo: 'https://picsum.photos/400/429?random=3',
     },
     {
-        name: '',
-        role: '',
-        photo: '',
+        name: 'Angela Lopez',
+        role: 'Social Media Manager',
+        photo: 'https://picsum.photos/400/429?random=4',
     },
     {
-        name: '',
-        role: '',
-        photo: '',
+        name: 'Scott Estrada',
+        role: 'Developer',
+        photo: 'https://picsum.photos/400/429?random=5',
     },
     {
-        name: '',
-        role: '',
-        photo: '',
+        name: 'Barbara Ramos',
+        role: 'Graphic Designer',
+        photo: 'https://picsum.photos/400/429?random=6',
     },
     
-]
+];
+
+for (let i = 0; i < objArr.length; i++) {
+   let box = 
+
+}
